@@ -5,11 +5,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    text-align:left;
     color: ivory;
     font-family: poppins;
     }
-    #head .bar{
+#head .bar{
         position: fixed;
     }
    
@@ -57,43 +56,41 @@
     margin-right: 8px;
 }
 section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    width: 100%;
+    position: relative;
 }
-.body{
-    display: flex;
+a#scroll-btn{
+    position: absolute;
+    height: 5em;
+    width: 3em;
+    border: 0.4em solid gray;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 4.25em;
+    border-radius: 3em;
 }
-/* section :nth-child(1){ 
-    background-color: aquamarine;
+a#scroll-btn:before{
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 0.7em;
+    width: 0.7em;
+    background-color: gray;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
 }
-section :nth-child(2){
-    background-color: aquamarine;
-}*/
-section p{
-    margin-top: 30px;
-    line-height: 30px;
-    width: 85%;
-    text-align: justify;
+@keyframes move-down{
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(3.3em);
+        opacity: 0;
+    }
 }
-.intro{  
-        /* position: relative; */
-        font-size: large;
-        font-weight: 500;
-        color:black;
-        font-family: poppins;
-      }
-      .intro p{
-        padding: 10px;
-        /* float:center; */
-        /* display: block; */
-        margin-inline-start: 10px;
-        }
-#part2 h1{
-    text-decoration: none;
-    font-family: poppins;
-
+#section2{
+    background-image: url(../images/world.jpeg);
 }
